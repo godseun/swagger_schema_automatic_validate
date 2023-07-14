@@ -1,0 +1,42 @@
+{
+  "name": "autoschemtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ts-node src/openAPIGenerator.ts && ts-node src/jscGenerator.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "openapi-typescript-codegen": "^0.25.0",
+    "typescript-json-schema": "^0.58.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/jest": "^29.5.2",
+    "ts-jest": "^29.1.0",
+    "jest": "^29.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
