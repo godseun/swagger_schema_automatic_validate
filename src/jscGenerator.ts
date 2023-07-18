@@ -16,8 +16,6 @@ const compilerOptions: TJS.CompilerOptions = {
   strictNullChecks: true,
 };
 
-fs.readFileSync("tsconfig.json", "utf8");
-
 function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
   const files = fs.readdirSync(dirPath);
 
