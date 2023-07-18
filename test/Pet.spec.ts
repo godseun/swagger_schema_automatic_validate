@@ -1,11 +1,5 @@
 import { extendJSCMatcher } from "../src/jestExt";
-import fs from "fs";
-import path from "path";
-
-const petSchema = fs.readFileSync(
-  path.resolve(__dirname, "../__schema__/PetSchema.json"),
-  "utf8"
-);
+import petSchema from "../__schema__/PetSchema.json";
 
 extendJSCMatcher();
 
