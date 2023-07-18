@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ts-node src/openAPIGenerator.ts && ts-node src/jscGenerator.ts",
+    "generate": "ts-node src/openAPIGenerator.ts && ts-node src/jscGenerator.ts",
     "test": "jest"
   },
   "author": "",
