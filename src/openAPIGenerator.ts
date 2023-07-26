@@ -1,8 +1,9 @@
 import * as path from "path";
 import { generate, HttpClient } from "openapi-typescript-codegen";
 
-const specURL = "https://petstore.swagger.io/v2/swagger.json";
-const outputDir = path.resolve(path.join(__dirname, "../__apiTypesTemp__"));
+// const specURL = "https://petstore.swagger.io/v2/swagger.json";
+const specURL = "http://localhost:5300/doc-json";
+const outputDir = path.resolve(path.join(__dirname, "../__apiTypes__"));
 
 async function swaggerModelGenerate() {
   try {
