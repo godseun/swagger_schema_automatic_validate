@@ -2,7 +2,7 @@ import { extendJSCMatcher } from "../src/jestExt";
 import petSchema from "../__schema__/PetSchema.json";
 import apiResponseSchema from "../__schema__/ApiResponseSchema.json";
 
-import type { Pet, ApiResponse } from "../__apiTypesTemp__";
+import type { Pet, ApiResponse } from "../__apiTypes__";
 
 extendJSCMatcher();
 

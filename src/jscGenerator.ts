@@ -33,7 +33,7 @@ function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
 }
 
 const getFiles = () => {
-  return getAllFiles(path.resolve(BASE_PATH, "../__apiTypesTemp__"), []);
+  return getAllFiles(path.resolve(BASE_PATH, "../__apiTypes__"), []);
 };
 
 const makeGenerator = (file: string[]): IGenerator => {

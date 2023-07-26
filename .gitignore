@@ -1,4 +1,4 @@
 node_modules/*
 __schema__/*
-__apiTypesTemp__/*
+__apiTypes__/*
 package-lock.json

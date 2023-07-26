@@ -1,6 +1,6 @@
 import Ajv from "ajv";
 import fs from "fs";
-import { Pet } from "../__apiTypesTemp__";
+import { Pet } from "../__apiTypes__";
 
 const petSchema = fs.readFileSync("./__schema__/UserSchema.json", "utf8");
 
